@@ -1,0 +1,67 @@
+
+body {
+    color: blue;
+    font-family: 'Open Sans', sans-serif;
+}	
+table {
+    border-collapse: collapse;
+    border: 0px solid red;
+    border-radius: 10px;
+}		
+tr {			
+    text-align: left;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px;	
+}	
+label {
+    width: 10px;
+    padding: 5px 5px;
+    margin: 5px;
+    background-color: #ededed;
+    border: 0px solid #659878;
+    border-radius: 10px;
+}		
+input {
+    padding: 10px 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid #659878;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px;
+}
+select{
+    padding: 10px 10px;
+    margin: 5px;
+    background-color: #ffffff;
+    border: 1px solid #659878;
+    border-radius: 10px;
+    width: 95%;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px;
+}
+button{
+    background-color: #ffffff;
+    border: 1px solid #659878;
+    border-radius: 10px;			
+}
+div {
+    background-color: #f2f2f2;
+    display: inline-block;
+    padding: 20px 20px;
+    width: 400px; 
+    height: 450px; 
+    margin: 5px;
+    color: blue;
+    font-family: 'Open Sans', sans-serif;
+    border: 0px solid blue;
+    border-radius: 10px;
+}	
+hr {
+    height:2px;
+    border-width:0;
+    color:gray;
+    background-color:gray
+}
