@@ -1,117 +1,126 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>	
-    <meta http-equiv="content-type" content="application/javascript; charset=utf-8">
+
+<head>
+	<meta http-equiv="content-type" content="application/javascript; charset=utf-8">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="NEC ST500 QR Code"/>
-	<meta property="og:title" content="NEC ST500 QR Code"/>
-	<meta property="og:url" content="http://mhrgl.com"/>
-	<meta property="og:image" content="http://mhrgl.com/nec.png"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="NEC ST500 QR Code" />
+	<meta property="og:title" content="NEC ST500 QR Code" />
+	<meta property="og:url" content="http://mhrgl.com" />
+	<meta property="og:image" content="http://mhrgl.com/nec.png" />
 	<meta property="og:type" content="article" />
 	<meta property="og:locale" content="en_GB" />
 	<meta property="og:description" content="NEC ST500 QR Code Generator">
 
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="mystyle.css">
 
 	<title>NEC ST500-Profile QR Code Generator</title>
-	
+
 	<script type="text/javascript" src="jquery.min.js"></script>
 	<script type="text/javascript" src="qrcode.js"></script>
 
 
-	 
+
 </head>
+
 <body>
-<div style="height: 75px;">
-<b> NEC ST500 - Profile QR Code Generator </b>
-<hr>
-Fill the necessary fields and scan the QR code.
-<button id="savebtn" onclick="kaydet()" >Download Profile.imr file</button>
-<button id="actcodebtn" onclick="hideDiv()" >Show Activation Code</button>
+	<div style="height: 75px;">
+		<b> NEC ST500 - Profile QR Code Generator </b>
+		<hr>
+		Fill the necessary fields and scan the QR code
+		<button id="savebtn" onclick="kaydet()">Download Profile.imr file</button>
+		<button id="actcodebtn" onclick="hideDiv()">Show Activation Code</button>
 
 
-</div>
-<hr>
-
-<div id="setings" > 
-	<b>Settings:	</b>
+	</div>
+	<div style="height: 75px;">
+		<b> Here is the Source Code </b>
+		<hr>
+		github.com/mahirgul/ST500ProfileQRGenerator
+		<button onclick="window.location.href='https://github.com/mahirgul/ST500ProfileQRGenerator';">
+			ST500ProfileQRGenerator</button>
+	</div>
 	<hr>
-	<table>
-		<tr>
-			<td><label>Profile ID:</label></td>
-			<td>
-				<input id="profileid" type="text" maxlength="2" value="5" aria-label="profileid" />
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<label>Profile Name:</label>
-			</td>
-			<td>
-				<input id="profilename" type="text" value="Profile-X" aria-label="profilename" />
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<label>Extension Number:</label>
-			</td>
-			<td>
-				<input id="extnumber" type="text" maxlength="10" value="1000" aria-label="extnumber" />
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<label>Password:</label>
-			</td>
-			<td>
-				<input id="password" type="password" maxlength="10" value="1000" aria-label="password" />
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<label>Server IP:</label>
-			</td>
-			<td>
-				<input id="serverip" type="text" value="172.16.0.10" aria-label="serverip" />
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<label>Server Port:</label>
-			</td>
-			<td>
-				<input id="serverport" type="text" maxlength="5" value="5060" aria-label="serverport" />
-			</td>
-		</tr>  
-		<tr>
-			<td>
-				<label>Server Type:</label>
-			</td>
-			<td>
-				<select id="servertype" aria-label="servertype">
-					<option value="1">SV9500</option>
-					<option value="2">SV9300</option>
-					<option value="3">SV9100</option>
-				</select>		
-			</td>
-		</tr>  
-	</table>
-</div>
 
-<div id="qrcode" > 
-	<b>Profile QR:	</b>
-	<hr>
-</div>
+	<div id="setings">
+		<b>Settings: </b>
+		<hr>
+		<table>
+			<tr>
+				<td><label>Profile ID:</label></td>
+				<td>
+					<input id="profileid" type="text" maxlength="2" value="5" aria-label="profileid" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Profile Name:</label>
+				</td>
+				<td>
+					<input id="profilename" type="text" value="Profile-X" aria-label="profilename" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Extension Number:</label>
+				</td>
+				<td>
+					<input id="extnumber" type="text" maxlength="10" value="1000" aria-label="extnumber" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Password:</label>
+				</td>
+				<td>
+					<input id="password" type="password" maxlength="10" value="1000" aria-label="password" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Server IP:</label>
+				</td>
+				<td>
+					<input id="serverip" type="text" value="172.16.0.10" aria-label="serverip" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Server Port:</label>
+				</td>
+				<td>
+					<input id="serverport" type="text" maxlength="5" value="5060" aria-label="serverport" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Server Type:</label>
+				</td>
+				<td>
+					<select id="servertype" aria-label="servertype">
+						<option value="1">SV9500</option>
+						<option value="2">SV9300</option>
+						<option value="3">SV9100</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+	</div>
 
-<div id="actcode" style="display:none;">
-	<b>Activation QR:</b>
-	<hr>
-</div>
+	<div id="qrcode">
+		<b>Profile QR: </b>
+		<hr>
+	</div>
+
+	<div id="actcode" style="display:none;">
+		<b>Activation QR:</b>
+		<hr>
+	</div>
 
 
-<script type="text/javascript" src="mycode.js"></script>
+	<script type="text/javascript" src="mycode.js"></script>
 
 </body>
