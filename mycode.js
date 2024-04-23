@@ -48,42 +48,43 @@ var qrcode = new QRCode(document.getElementById("qrcode"), {
 	correctLevel : QRCode.CorrectLevel.L
   });
 
-let text = "";
+var text = "";
 
 function makeProfileCode () {
-text = '<?xml version="1.0" encoding="UTF-8"?><root>'+
-	 '<Profile id="'+ document.getElementById("profileid").value +'">'+
-		'<ExportTarget>'+
-		  '<ProfileInfo>'+
-			'<Name val="'+ document.getElementById("profilename").value +'" editable="1" />'+
-		  '</ProfileInfo>'+
-		  '<UserInfo>'+
-			'<ID val="'+ document.getElementById("extnumber").value +'" editable="1" />'+
-			'<Password val="'+ document.getElementById("password").value +'" editable="1" />'+
-		  '</UserInfo>'+
-		  '<SvInfo>'+
-			'<SvType01 val="'+ document.getElementById("servertype").value +'" editable="1" />'+
-			'<Domain01 val="'+ document.getElementById("serverip").value +'" editable="1" />'+
-			'<Address01 val="'+ document.getElementById("serverip").value +'" editable="1" />'+
-			'<Port01 val="'+ document.getElementById("serverport").value +'" editable="1" />'+
-			'<RegistrarServer01 val="'+ document.getElementById("serverip").value +'" editable="1" />'+
-			'<ProtocolType01 val="2" editable="1" />'+
-		  '</SvInfo>'+
-		'</ExportTarget>'+
-	  '</Profile>'+
-	'</root>';
+text = '<?xml version="1.0" encoding="UTF-8"?>\r\n'+
+	'<root>\r\n'+
+	 '<Profile id="'+ document.getElementById("profileid").value +'">\r\n'+
+		'<ExportTarget>\r\n'+
+		  '<ProfileInfo>\r\n'+
+			'<Name val="'+ document.getElementById("profilename").value +'" editable="1" />\r\n'+
+		  '</ProfileInfo>\r\n'+
+		  '<UserInfo>\r\n'+
+			'<ID val="'+ document.getElementById("extnumber").value +'" editable="1" />\r\n'+
+			'<Password val="'+ document.getElementById("password").value +'" editable="1" />\r\n'+
+		  '</UserInfo>\r\n'+
+		  '<SvInfo>\r\n'+
+			'<SvType01 val="'+ document.getElementById("servertype").value +'" editable="1" />\r\n'+
+			'<Domain01 val="'+ document.getElementById("serverip").value +'" editable="1" />\r\n'+
+			'<Address01 val="'+ document.getElementById("serverip").value +'" editable="1" />\r\n'+
+			'<Port01 val="'+ document.getElementById("serverport").value +'" editable="1" />\r\n'+
+			'<RegistrarServer01 val="'+ document.getElementById("serverip").value +'" editable="1" />\r\n'+
+			'<ProtocolType01 val="2" editable="1" />\r\n'+
+		  '</SvInfo>\r\n'+
+		'</ExportTarget>\r\n'+
+	  '</Profile>\r\n'+
+	'</root>\r\n';
 	
 	
 	qrcode.makeCode(text);
 }
 
 function makeActCode () {
-	let text = '<?xml version="1.0" encoding="UTF-8"?>'+
-				'<root>'+
-				'<Terminal>'+
-				'<ActivationKey val="1b8ff2a283623dae" editable="0" />'+
-				'</Terminal>'+
-				'</root>';	
+	var text = '<?xml version="1.0" encoding="UTF-8"?>\r\n'+
+				'<root>\r\n'+
+				'<Terminal>\r\n'+
+				'<ActivationKey val="1b8ff2a283623dae" editable="0" />\r\n'+
+				'</Terminal>\r\n'+
+				'</root>\r\n';	
 	
 	qrcodeact.makeCode(text);
 }

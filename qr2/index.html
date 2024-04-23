@@ -20,26 +20,26 @@
 	<title>NEC ST500-Profile QR Code Generator</title>
 
 	<script type="text/javascript" src="jquery.min.js"></script>
-	<script type="text/javascript" src="qrcode.js"></script>
+	<script src="js/easy.qrcode.js" type="text/javascript" charset="utf-8"></script>
+
+
 
 </head>
 
 <body>
-	<div style="height: 95px;">
+	<div class="header-div" style="height: 100px;">
 		<b> NEC ST500 - Profile QR Code Generator </b>
-		<br>
-		<button style="background-color: lightpink;" id="sourcecode"
-			onclick="window.location.href='https://github.com/mahirgul/ST500ProfileQRGenerator';">Source Code - Github
-			Link</button>
-		<button style="background-color: yellow;" id="sourcecode" onclick="window.location.href='/qr2';">New-QR-2</button>
+		<button style="background-color: lightpink;" id="sourcecode" onclick="window.location.href='https://github.com/mahirgul/ST500ProfileQRGenerator';">Source Code - Github Link</button>
+		<button style="background-color: yellow;" id="sourcecode" onclick="window.location.href='/qr';">Old-QR-1</button>
 		<hr>
 		Fill the necessary fields and scan the QR code
+		
 		<button style="background-color: lightgreen;" id="savebtn" onclick="kaydet()">Download Profile.imr file</button>
 		<button style="background-color: lightblue;" id="actcodebtn" onclick="hideDiv()">Show Activation Code</button>
 	</div>
-	<hr>
-
-	<div id="setings">
+	<br/>
+	<div class="canvas-container">
+	<div class="mid-div" id="setings">
 		<b>Settings: </b>
 		<hr>
 		<table>
@@ -111,17 +111,11 @@
 			</tr>
 		</table>
 	</div>
+	
+	<div class="mid-div" id="qrcode"> </div>
 
-	<div id="qrcode">
-		<b>Profile QR: </b>
-		<hr>
-	</div>
-
-	<div id="actcode" style="display:none;">
-		<b>Activation QR:</b>
-		<hr>
-	</div>
-
+	<div class="mid-div" id="actcode" style="display:none;"> </div>
+	  </div>
 
 	<script type="text/javascript" src="mycode.js"></script>
 
