@@ -1,1 +1,4 @@
-![image](https://github.com/mahirgul/ST500ProfileQRGenerator/assets/8502843/40996c11-e1c4-4091-ac89-4efe5b421cd8)
+![image](https://github.com/mahirgul/ST500ProfileQRGenerator/assets/8502843/2bbfe925-19e9-4ea9-83e2-61bccd3dae37)
+
+
+![image](https://github.com/mahirgul/ST500ProfileQRGenerator/assets/8502843/703bebf3-e0bc-4a16-99cf-672cb543ab41)
