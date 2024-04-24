@@ -1,3 +1,4 @@
+You can try with http://mhrgl.com/qr.html
 Thanks to:
 https://github.com/ushelp/EasyQRCodeJS
 ![image](https://github.com/mahirgul/ST500ProfileQRGenerator/assets/8502843/2bbfe925-19e9-4ea9-83e2-61bccd3dae37)
